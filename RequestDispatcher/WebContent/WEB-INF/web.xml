@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>RequestDispatcher</display-name>
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>com.ambesh.Addition</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/allOperation</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>sub</servlet-name>
+    <servlet-class>com.ambesh.Substration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sub</servlet-name>
+    <url-pattern>/subs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>mul</servlet-name>
+    <servlet-class>com.ambesh.Multiplication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mul</servlet-name>
+    <url-pattern>/multi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>div</servlet-name>
+    <servlet-class>com.ambesh.Division</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>div</servlet-name>
+    <url-pattern>/divi</url-pattern>
+  </servlet-mapping>
+</web-app>
