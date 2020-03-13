@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletContext</display-name>
+  <context-param>
+  	<param-name>driversName</param-name>
+  	<param-value>org.sqlite.JDBC</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>servletContext</servlet-name>
+  	<servlet-class>com.ambesh.initDrivers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>servletContext</servlet-name>
+  	<url-pattern>/servletCont</url-pattern>
+  </servlet-mapping>
+</web-app>
